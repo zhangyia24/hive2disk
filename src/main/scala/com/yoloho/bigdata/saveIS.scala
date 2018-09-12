@@ -8,6 +8,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 object saveIS {
   def main(args: Array[String]): Unit = {
+
     System.setProperty("hadoop.home.dir", "D:\\service\\hadoop-2.7.4-window") //加载hadoop组件
     val conf: SparkConf = new SparkConf().setAppName("").setMaster("local[4]")
       .set("spark.executor.memory", "1g")
